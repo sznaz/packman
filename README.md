@@ -29,25 +29,6 @@ It demonstrates clean architecture, scalable state management, and responsive UI
 - React Router
 - Context API
 
----
-
-## 📁 Project Structure
-src/
-├── components/
-├── data/
-├── context/
-│ ├── auth/
-│ └── cart/
-├── pages/
-├── assets/
-├── router/
-├── types/
-├── theme/
-└── App.tsx
-└── main.tsx
-└── index.css
-
-
 
 ---
 
