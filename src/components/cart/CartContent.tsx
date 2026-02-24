@@ -30,18 +30,15 @@ export default function CartContent() {
               key={item.id}
               className="flex items-center gap-3 bg-white p-2 rounded-lg shadow-sm"
             >
-              {/* Image */}
               <img
                 src={item.image}
                 alt={item.name}
                 className="w-14 h-14 object-cover rounded-md"
               />
 
-              {/* Info */}
               <div className="flex-1">
                 <p className="font-medium text-sm">{item.name}</p>
 
-                {/* Quantity Controls */}
                 <div className="flex items-center gap-2 mt-1">
                   <IconButton
                     size="small"
@@ -67,7 +64,6 @@ export default function CartContent() {
                 </p>
               </div>
 
-              {/* Delete */}
               <IconButton
                 size="small"
                 onClick={() => removeFromCart(item.id)}

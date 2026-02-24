@@ -47,7 +47,6 @@ export function CartProvider({ children }: Props) {
     );
   };
 
-  // Prevent unnecessary re-renders
   const value = useMemo(
     () => ({
       cart,

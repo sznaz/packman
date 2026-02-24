@@ -16,7 +16,6 @@ export default function HomePage() {
       <Header onOpenCart={() => setCartOpen(true)} />
 
       <div className="flex flex-1">
-        {/* Categories always on left (even mobile) */}
         <div className="w-40 md:w-60">
           <Sidebar
             selected={selectedCategory}
@@ -24,12 +23,10 @@ export default function HomePage() {
           />
         </div>
 
-        {/* Products */}
         <div className="flex-1 p-4">
           <ProductGrid category={selectedCategory} />
         </div>
 
-        {/* Cart */}
         <CartSidebar
           open={cartOpen}
           onClose={() => setCartOpen(false)}

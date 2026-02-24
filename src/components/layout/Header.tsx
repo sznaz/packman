@@ -22,7 +22,6 @@ export default function Header({ onOpenCart }: Props) {
 
   const totalItems = cart.reduce((acc, item) => acc + item.quantity, 0);
 
-  // Safe initials extraction
   const getInitials = (name?: string): string | null => {
     if (!name || name.trim().length === 0) return null;
 
@@ -43,7 +42,6 @@ export default function Header({ onOpenCart }: Props) {
         </Typography>
 
         <Box className="flex items-center gap-3">
-          {/* Bag icon only on small screens */}
           <div className="md:hidden">
             <IconButton color="inherit" onClick={onOpenCart}>
               <Badge badgeContent={totalItems} color="error">
@@ -52,7 +50,6 @@ export default function Header({ onOpenCart }: Props) {
             </IconButton>
           </div>
 
-          {/* Profile Avatar */}
           <Avatar
             sx={{
               bgcolor: initials ? "#dc2626" : "transparent",

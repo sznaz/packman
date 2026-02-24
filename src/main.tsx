@@ -9,7 +9,6 @@ import App from "./App";
 import { theme } from "./theme/theme";
 import { AuthProvider, CartProvider } from "./context";
 
-// ✅ Updated imports
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
